@@ -1,1 +1,9 @@
 <h1>Listado de productos</h1>
+
+<% @products.each do |a| %>
+
+<p><%= a.name %>, <%= a.weight %> kg<p>
+
+<% end %>
+
+<%= link_to 'Crear producto', new_product_path %>
